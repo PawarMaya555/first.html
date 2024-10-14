@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Image Slider</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img src="Alabay Assets/img1.png" alt="img1">
+        </div>
+        <div class="image">
+            <img src="Alabay Assets/img2.png" alt="img2">
+        </div>
+        <div class="image">
+            <img src="Alabay Assets/img3.png" alt="img3">
+        </div>
+        <div class="image">
+            <img src="Alabay Assets/img4.png" alt="img4">
+        </div>
+        <div class="image">
+            <img src="Alabay Assets/img5.png" alt="img5">
+        </div>
+
+        <div class="button">
+            <a onclick="nextimg(-1)" class="prev">❮</a>
+            <a onclick="nextimg(1)" class="next">❯</a>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <script>
+
+        var imageno =1;
+        displayimg(imageno);
+
+        function nextimg(n){
+            displayimg(imageno += n)
+        }
+
+        function currentSlide(n){
+            displayimg(imageno = n)
+        }
+
+        function displayimg(n){
+            var i;
+            var image = document.getElementsByClassName("image");
+            var dots = document.getElementsByClassName("dot");
+
+            if(n > image.length){
+                imageno = 1;
+            }
+
+            if(n < 1){
+                imageno = image.length;
+            }
+
+            for(i=0; i < image.length; i++){
+                image[i].style.display = "none";
+            }
+
+            for(i=0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            image[imageno - 1].style.display ="block";
+            dots[imageno - 1].className += " active";
+
+        }
+
+    </script>
+</body>
+</html>
