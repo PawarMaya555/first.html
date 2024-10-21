@@ -1,84 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Image Slider</title>
-</head>
+<!DOCTYPE HTML>
+<html>
+   <head>
+   	<meta name="viewport" >
+   	<title></title>
+   	<link rel="stylesheet" href="style.css">
+   </head>
 <body>
+	<div class="mian">
+		<ul>
+			<li class="logo">Logo</li>
+			<li class="logo">Genral</li>
+            <a href="Dashbord1.html">
+			    <li class="logo">Dashbord</li>
+            </a>
+			<a href="transaction.html">
+			    <li class="logo">Transaction</li>
+			</a>
+			<li class="logo">Start Here</li>
+			<li class="logo">FAQ</li>
+			<li class="logo">Learning Modules</li>
+			<li class="logo">Rewards</li>
+			<li class="logo">Feedback</li>
+		</ul>
+	</div>
 
-    <div class="container">
-        <div class="image">
-            <img src="img1.png" alt="img1">
-        </div>
-        <div class="image">
-            <img src="img2.png" alt="img2">
-        </div>
-        <div class="image">
-            <img src="img3.png" alt="img3">
-        </div>
-        <div class="image">
-            <img src="img4.png" alt="img4">
-        </div>
-        <div class="image">
-            <img src="img5.png" alt="img5">
-        </div>
-
-        <div class="button">
-            <a onclick="nextimg(-1)" class="prev">❮</a>
-            <a onclick="nextimg(1)" class="next">❯</a>
-        </div>
-
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-    </div>
-
-    <script>
-
-        var imageno =1;
-        displayimg(imageno);
-
-        function nextimg(n){
-            displayimg(imageno += n)
-        }
-
-        function currentSlide(n){
-            displayimg(imageno = n)
-        }
-
-        function displayimg(n){
-            var i;
-            var image = document.getElementsByClassName("image");
-            var dots = document.getElementsByClassName("dot");
-
-            if(n > image.length){
-                imageno = 1;
-            }
-
-            if(n < 1){
-                imageno = image.length;
-            }
-
-            for(i=0; i < image.length; i++){
-                image[i].style.display = "none";
-            }
-
-            for(i=0; i < dots.length; i++){
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            image[imageno - 1].style.display ="block";
-            dots[imageno - 1].className += " active";
-
-        }
-
-    </script>
+	<div class="img1">
+		<h3>Hello Maya Pawar</h3>
+	
+	</div>
 </body>
 </html>
+
+
+<!--<div class="Page">
+    <div class="page1">
+      <h5 class="hi"><span style="color: red;">Goal Achieved</span> <br> 10 </h5>
+      <h5 class="Hi"> <span style="color: red;">Total Goal</span> <br>Rs.30000</h5>
+    </div>
+
+    <div class="page2">
+      <h5 class="l1"><span style="color: red;" >Level Achieved</span> : Star</h5>
+    </div>
+   </div>-->
+   
