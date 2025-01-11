@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  /* background-color: rgb(85, 38, 129); */
+}
+.clockContainer {
+  margin-left: 500px;
+  border: 1px solid none;
+  border-radius: 40px;
+  height: 425px;
+  width: 180px;
+  padding-left: 30px;
+  background-color: #045c8f;
+  background-image: linear-gradient(160deg, #4b0acddc 0%, #6266d9 100%);
+
+  position: absolute;
+  top: 15%;
+}
+#hour {
+  border: 1px solid none;
+  height: 100px;
+  width: 120px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  color: white;
+  background-color: #045c8f;
+  background-image: linear-gradient(160deg, #4b0acddc 0%, #6266d9 100%);
+  font-size: 70px;
+  font-weight: bolder;
+}
+#minute {
+  border: 1px solid none;
+  height: 100px;
+  width: 120px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  color: white;
+  background-color: #045c8f;
+  background-image: linear-gradient(160deg, #4b0acddc 0%, #6266d9 100%);
+  font-size: 70px;
+  font-weight: bolder;
+}
+#second {
+  border: 1px solid none;
+  height: 100px;
+  width: 120px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  color: yellow;
+  background-color: #045c8f;
+  background-image: linear-gradient(160deg, #4b0acddc 0%, #6266d9 100%);
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+#ampm {
+  border: 1px solid none;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  color: yellow;
+  background-color: #045c8f;
+  background-image: linear-gradient(160deg, #4b0acddc 0%, #6266d9 100%);
+}
+
+.circle1 {
+  border: 2px solid none;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  margin: 100px 660px;
+}
+
+.circle2 {
+  border: 2px solid none;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: #fad961;
+  background-image: radial-gradient(
+    circle 1008px at -0.5% 50.2%,
+    rgba(255, 85, 0, 1) 0%,
+    rgba(255, 246, 73, 1) 50.4%,
+    rgba(0, 233, 50, 1) 100.2%
+  );
+
+  margin: -100px 370px;
+}
+
+#clockheading {
+  color: #0790df;
+  text-shadow: 2px 2px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-stretch: extra-expanded;
+  margin: 10px 200px;
+}
