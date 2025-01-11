@@ -3,7 +3,17 @@
   padding: 0px;
 }
 body {
-  /* background-color: rgb(85, 38, 129); */
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  );
 }
 .clockContainer {
   margin-left: 500px;
@@ -98,7 +108,7 @@ body {
 }
 
 #clockheading {
-  color: #0790df;
+  color: #deedf6;
   text-shadow: 2px 2px 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
