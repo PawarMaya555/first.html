@@ -3,12 +3,12 @@
   padding: 0px;
 }
 body {
-  background: #000046; /* fallback for old browsers */
+  background: #000046; 
   background: -webkit-linear-gradient(
     to right,
     #1cb5e0,
     #000046
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #1cb5e0,
