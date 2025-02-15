@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* header1 */
+#header1 {
+  padding: 25px;
+  font-size: xx-large;
+  /* position: sticky;
+  top: 0px; */
+}
+
+/* header2 */
+#header2 {
+  position: relative;
+}
+
+#header2 p {
+  text-transform: capitalize;
+  font-size: larger;
+  color: #000;
+}
+
+/* header3 */
+#h2 {
+}
+.header3_content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+.img1 {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  box-shadow: 2px 2px 20px rgb(75, 75, 174);
+  object-fit: cover;
+  margin-top: 100px;
+}
+img {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* .content {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+ul {
+  list-style-type: disc;
+  text-align: justify;
+  height: 50vh;
+  width: 800px;
+  /* gap: 50px; */
+}
+li {
+  text-align: justify;
+  margin: 10px;
+}
+span {
+  font-weight: bolder;
+}
+
+/* header4 */
+#header4 {
+  margin-top: 70px;
+}
+#Country_names {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#Country_names div {
+  font-size: larger;
+}
+
+/* header5 */
+#ul2 li {
+  margin-left: 550px;
+}
+
+/* header6 */
+#header6 {
+  background-image: radial-gradient(
+    circle farthest-corner at 48.4% 47.5%,
+    rgba(122, 183, 255, 1) 0%,
+    rgba(21, 83, 161, 1) 90%
+  );
+  margin-top: 0px;
+}
+
+#header6 p {
+  text-transform: capitalize;
+}
+
+/* header7 *************************************************************************/
+#header7 {
+  margin: 50px 50px;
+}
+.accordion-item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+}
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease-in-out;
+}
